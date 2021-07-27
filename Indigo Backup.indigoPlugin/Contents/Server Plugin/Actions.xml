@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Actions>
+	<Action id="PerformTriggeredBackup"> 
+		<Name>Perform an Backup</Name> 
+		<CallbackMethod>PerformTriggeredBackup</CallbackMethod> 
+	</Action>
+</Actions>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<PluginConfig>
+
+<Field type="checkbox" id="Preferences_BackupSchedule" defaultValue="Checked">
+<Label>Automatically Backup 
+the Indigo Server on
+a schedule</Label>
+</Field>
+
+<Field	type="menu"	id="Preferences_Timing"	defaultValue="20160">
+<Label>Back up, Every:</Label>
+	<List>
+		<Option value="1440">Day</Option>
+		<Option value="2880">2 Days</Option>
+		<Option value="4320">3 Days</Option>
+		<Option value="10080">7 Days</Option>
+		<Option value="20160">14 Days</Option>
+		<Option value="43200">30 Days</Option>
+		<Option value="64800">45 Days</Option>
+		<Option value="86400">60 Days</Option>
+		<Option value="129600">90 Days</Option>
+	</List>
+</Field>
+
+<Field id="Preferences_BackupLocation" type="textfield" defaultValue="~/Documents/IndigoBackup">
+<Label>Location for Backups 
+to be stored?:</Label>
+</Field>
+
+</PluginConfig>
