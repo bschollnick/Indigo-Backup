@@ -14,14 +14,15 @@ If for some reason you need to manually re-install the plugin, you will need to 
 
 Double clicking on the plugin will *not* overwrite the old plugin if it is the same version number.
 
-**Support: **
+**Support**
+
 For issues or questions, please contact Benjamin@schollnick.net.  
 
 While I do have specific forums setup in the Indigo Forums, I am not as active as use to be with the Indigo Forums.  
 
 The only reliable method of getting support is via Email.
 
-**Donations: **
+**Donations**
 
 To help fund the continued development of this plugin...  Please consider donating. 
 
@@ -38,7 +39,7 @@ To Donate, please go to http://www.schollnick.net/wordpress/about/donations/   a
 donate icon.
 
 
-**Version History:**
+**Version History**
 
 * v1.01 - Unreleased 2021-07-26, uploaded to Github for testing.  Untested by me, but should resolve Indigo 7.x backup path issue.
 * v1.02  Released on 2021-08-08, tested by me and resolved:
