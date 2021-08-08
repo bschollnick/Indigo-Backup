@@ -119,13 +119,13 @@ class Plugin(indigo.PluginBase):
 		import distutils.archive_util
 		import zipfile
 
-		archive_filename_template  = "Indigo_Backup_%m_%d_%Y__%H_%M_%S.zip"
+		archive_filename_template  = "Indigo_Backup_%m_%d_%Y__%H_%M_%S"
 		archive_filename = 	os.path.expanduser ( backup_target_path + os.sep + time.strftime ( archive_filename_template, time.localtime() ) )
 		indigo.server.log (" archive filename %s" % archive_filename)
-		indigo.server.log (" save path %s" % self.return_indigo_path ()[0:-1] )
+		indigo.server.log (" save path %s" % backup_target_path)
 
 		try:
-			distutils.archive_util.make_zipfile ( archive_filename, os.path.expanduser ( self.return_indigo_path ()[0:-1]) )
+			distutils.archive_util.make_zipfile ( archive_filename, os.path.expanduser ( self.return_indigo_path () ))
 		except zipfile.LargeZipFile:
 			indigo.server.log ("Zip File Error, Would require 64 bit extensions")
 		indigo.server.log ("Backup Finished.")
